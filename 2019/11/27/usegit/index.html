@@ -15,6 +15,9 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 
 <script id="hexo-configurations">
@@ -29,7 +32,7 @@
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
-    fancybox: false,
+    fancybox: true,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -47,13 +50,13 @@
   };
 </script>
 
-  <meta name="description" content="这里共展示两类三种方式。1.git pull：获取最新代码到本地，并自动合并到当前分支命令展示12345&#x2F;&#x2F;查询当前远程的版本$ git remote -v &#x2F;&#x2F;直接拉取并合并最新代码$ git pull origin master [示例1：拉取远端origin&#x2F;master分支并合并到当前分支]$ git pull origin dev [示例2：拉取远端origin&#x2F;dev分支并合并到当前分">
+  <meta name="description" content="这里共展示两类三种方式。">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git从远程仓库获取最新代码合并到本地分支">
 <meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;2019&#x2F;11&#x2F;27&#x2F;usegit&#x2F;index.html">
 <meta property="og:site_name" content="芸伟">
-<meta property="og:description" content="这里共展示两类三种方式。1.git pull：获取最新代码到本地，并自动合并到当前分支命令展示12345&#x2F;&#x2F;查询当前远程的版本$ git remote -v &#x2F;&#x2F;直接拉取并合并最新代码$ git pull origin master [示例1：拉取远端origin&#x2F;master分支并合并到当前分支]$ git pull origin dev [示例2：拉取远端origin&#x2F;dev分支并合并到当前分">
+<meta property="og:description" content="这里共展示两类三种方式。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-27T09:24:46.207Z">
 <meta name="twitter:card" content="summary">
@@ -102,6 +105,10 @@
   .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 
 </head>
 
@@ -261,7 +268,24 @@
               </span>
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
-            </span><br>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2019/11/27/usegit/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/11/27/usegit/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
@@ -286,9 +310,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>这里共展示两类三种方式。</p><h3 id="1-git-pull：获取最新代码到本地，并自动合并到当前分支"><a href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支" class="headerlink" title="1.git pull：获取最新代码到本地，并自动合并到当前分支"></a>1.git pull：获取最新代码到本地，并自动合并到当前分支</h3><p>命令展示</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line">$ git remote -v </span><br><span class="line">//直接拉取并合并最新代码</span><br><span class="line">$ git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]</span><br><span class="line">$ git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]</span><br></pre></td></tr></table></figure><a id="more"></a>
-
-
+        <p>这里共展示两类三种方式。</p><a id="more"></a>
+<h3 id="1-git-pull：获取最新代码到本地，并自动合并到当前分支"><a href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支" class="headerlink" title="1.git pull：获取最新代码到本地，并自动合并到当前分支"></a>1.git pull：获取最新代码到本地，并自动合并到当前分支</h3><p>命令展示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line">$ git remote -v </span><br><span class="line">//直接拉取并合并最新代码</span><br><span class="line">$ git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]</span><br><span class="line">$ git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]</span><br></pre></td></tr></table></figure>
 <p style="color:red">分析：不推荐这种方式，因为是直接合并，无法提前处理冲突。</p>
 
 <h3 id="2-git-fetch-merge-获取最新代码到本地，然后手动合并分支"><a href="#2-git-fetch-merge-获取最新代码到本地，然后手动合并分支" class="headerlink" title="2.git fetch + merge: 获取最新代码到本地，然后手动合并分支"></a>2.git fetch + merge: 获取最新代码到本地，然后手动合并分支</h3><h4 id="2-1-额外建立本地分支"><a href="#2-1-额外建立本地分支" class="headerlink" title="2.1.额外建立本地分支"></a>2.1.额外建立本地分支</h4><p>代码展示</p>
@@ -359,7 +383,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/git/" rel="tag"># git</a>
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
           </div>
 
         
@@ -385,6 +409,7 @@
 
           </div>
           
+    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -425,7 +450,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -443,6 +468,9 @@
       </div>
   </nav>
 </div>
+  <div class="motion-element music_player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210 height=110 src="//music.163.com/outchain/player?type=2&id=1491585&auto=1&height=66"></iframe>
+  </div>
   <div class="feed-link motion-element">
     <a href="/atom.xml" rel="alternate">
       <i class="fa fa-rss"></i>RSS
@@ -492,27 +520,24 @@
   &copy; 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">ywAscend</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
+      <i class="fa fa-area-chart" style="display:none"></i>
+      本站总字数：
     </span>
-    <span title="站点总字数">2k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点总字数">5k</span>
 </div>
 
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
       <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
+        <i class="fa fa-user" style="display:none"></i>
+        本站总访客数：
       </span>
       <span class="site-uv" title="总访客量">
         <span id="busuanzi_value_site_uv"></span>
@@ -521,7 +546,8 @@
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
+        <i class="fa fa-eye" style="display:none"></i>
+        本站总访问量：
       </span>
       <span class="site-pv" title="总访问量">
         <span id="busuanzi_value_site_pv"></span>
@@ -545,6 +571,8 @@
   
   <script color='0,0,255' opacity='0.8' zIndex='-1' count='160' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
@@ -576,9 +604,56 @@
 
   
 
+
+<script>
+NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'x2kDPSlpOEbmXkSNWrlbp4EG-MdYXbMMI',
+    appKey: 'Ko3MyX6eIas958hgKHpj537U',
+    placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+
   <script type="text/javascript" src="/js/src/loveCountry.js"></script>
   <script type="text/javascript" src="/js/src/clickLove.js"></script>
   <!-- 页面离开欺骗 -->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+  <!-- 雪花特效 -->
+  <script type="text/javascript">
+    var windowWidth = $(window).width();
+    if (windowWidth > 480) {
+      document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+    }
+  </script>
+  <!-- 打字礼花特效-->
+  <script type="text/javascript" src="/js/src/activate-power-mode.js"></script>
+  <script type="text/javascript">
+    POWERMODE.colorful = true; // 启用礼花特效
+    POWERMODE.shake = false; // 震动特效
+    document.body.addEventListener('input',POWERMODE)
+  </script>
+
+  <!-- 看板娘  https://ywAscend.github.io -->
+    <script src="/live2d/autoload.js"></script>
+  
+
 </body>
 </html>
