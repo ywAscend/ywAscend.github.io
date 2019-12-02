@@ -50,22 +50,15 @@
   };
 </script>
 
-  <meta name="description" content="注册LeanCloude账号">
-<meta name="keywords" content="next">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Next 使用 valine 评论模块">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;2019&#x2F;11&#x2F;28&#x2F;use-valine&#x2F;index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="歌单">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;musicList&#x2F;index.html">
 <meta property="og:site_name" content="芸伟">
-<meta property="og:description" content="注册LeanCloude账号">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;github.com&#x2F;images&#x2F;step1.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;github.com&#x2F;images&#x2F;step2.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;github.com&#x2F;images&#x2F;step3.png">
-<meta property="og:updated_time" content="2019-11-28T06:45:06.090Z">
+<meta property="og:updated_time" content="2019-12-02T04:20:25.689Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;github.com&#x2F;images&#x2F;step1.png">
 
-<link rel="canonical" href="https://github.com/ywAscend/2019/11/28/use-valine/">
+<link rel="canonical" href="https://github.com/ywAscend/musicList/">
 
 
 <script id="page-configurations">
@@ -73,13 +66,14 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
+    isPost: false,
+    isPage: true,
     isArchive: false
   };
 </script>
 
-  <title>Next 使用 valine 评论模块 | 芸伟</title>
+  <title>歌单 | 芸伟
+  </title>
   
 
 
@@ -114,6 +108,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -223,185 +220,44 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+  
+  
 
           <div class="content">
             
 
   <div class="posts-expand">
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2019/11/28/use-valine/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header2.jpg">
-      <meta itemprop="name" content="ywAscend">
-      <meta itemprop="description" content="记录点滴">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="芸伟">
-    </span>
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Next 使用 valine 评论模块
-        </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+<h1 class="post-title" itemprop="name headline">歌单
+</h1>
 
-              <time title="创建时间：2019-11-28 13:39:30 / 修改时间：14:45:06" itemprop="dateCreated datePublished" datetime="2019-11-28T13:39:30+08:00">2019-11-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
+<div class="post-meta">
   
-  <span class="post-meta-item">
-    
-      
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">评论：</span>
-    
-    
 
-    <a title="valine" href="/2019/11/28/use-valine/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/11/28/use-valine/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <h3 id="注册LeanCloude账号"><a href="#注册LeanCloude账号" class="headerlink" title="注册LeanCloude账号"></a>注册LeanCloude账号</h3><a id="more"></a><p>官网传送门： <a href="https://leancloud.cn" target="_blank" rel="noopener">LeanCloude</a></p>
-<h3 id="LeanCloude配置"><a href="#LeanCloude配置" class="headerlink" title="LeanCloude配置"></a>LeanCloude配置</h3><h4 id="创建应用"><a href="#创建应用" class="headerlink" title="创建应用"></a>创建应用</h4><p>点击创建应用<br><img src="/images/step1.png" alt><br>自己取一个应用名<br><img src="/images/step2.png" alt></p>
-<h4 id="创建一个类"><a href="#创建一个类" class="headerlink" title="创建一个类"></a>创建一个类</h4><p>前面应用已经创建完毕，需要创建一个类Comment来存放评论信息。<br>在 LeanCloud -&gt; 存储 -&gt; 创建Class -&gt; 无限制的Class，class 名称为：Comment。<br><img src="/images/step3.png" alt></p>
-<h4 id="安全设置"><a href="#安全设置" class="headerlink" title="安全设置"></a>安全设置</h4><p>在 leancloude -&gt; 设置 -&gt; 安全中心，把除数据存储外其他选项都关闭</p>
-<h3 id="Next中配置valine"><a href="#Next中配置valine" class="headerlink" title="Next中配置valine"></a>Next中配置valine</h3><p>在leancloude -&gt; 设置 -&gt; 应用keys -&gt; 获得 appkey、appid<br>进入主题配置中，找到 <span style="color:red">valine</span>，配置appkey、appid</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line">  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version</span><br><span class="line">  appid:  # Your leancloud application appid</span><br><span class="line">  appkey: # Your leancloud application appkey</span><br><span class="line">  notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki</span><br><span class="line">  verify: false # Verification code</span><br><span class="line">  placeholder: &apos;ヾﾉ≧∀≦)o来啊，快活啊!&apos; # Comment box placeholder</span><br><span class="line">  avatar: mm # Gravatar style</span><br><span class="line">  guest_info: nick,mail,link # Custom comment header</span><br><span class="line">  pageSize: 10 # Pagination size</span><br></pre></td></tr></table></figure>
-<h3 id="配置CDN"><a href="#配置CDN" class="headerlink" title="配置CDN"></a>配置CDN</h3><p>进入主题配置文件，配置成第三方 CDN</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Valine</span><br><span class="line"> # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js</span><br><span class="line"> # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js</span><br><span class="line"> valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js</span><br></pre></td></tr></table></figure>
-
-<h3 id="指定文章是否开启评论功能"><a href="#指定文章是否开启评论功能" class="headerlink" title="指定文章是否开启评论功能"></a>指定文章是否开启评论功能</h3><p>hexo评论的功能是在所有页面都默认开启的，但是有的时候我们在页面上不需要显示评论功能，例如分类，标记页面。<br>在Front-matter中设置comments: false即可关闭。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2019-11-28</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br></pre></td></tr></table></figure>
-
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://tding.top/archives/ed8b904f.html" target="_blank" rel="noopener">https://tding.top/archives/ed8b904f.html</a><br><a href="https://blog.csdn.net/jiunian_2761/article/details/97388997" target="_blank" rel="noopener">https://blog.csdn.net/jiunian_2761/article/details/97388997</a></p>
-
-    </div>
-
-    
-    
-    
-        <div class="reward-container">
-  <div></div>
-  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
-        <img src="/images/wechatpay.png" alt="ywAscend 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div style="display: inline-block;">
-        <img src="/images/alipay.png" alt="ywAscend 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
 </div>
 
-        
+</header>
 
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>ywAscend
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://github.com/ywAscend/2019/11/28/use-valine/" title="Next 使用 valine 评论模块">https://github.com/ywAscend/2019/11/28/use-valine/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/next/" rel="tag"><i class="fa fa-tag"></i> next</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/11/27/hexo/" rel="prev" title="hexo主题配置Next">
-      <i class="fa fa-chevron-left"></i> hexo主题配置Next
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/01/use-live2d/" rel="next" title="Next配置live2d 看板娘">
-      Next配置live2d 看板娘 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      
+      
+      
+      <div class="post-body">
+          <div id="aplayer-BwXhVXuW" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="431949996" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+      </div>
+      
+      
+      
     </div>
-      </footer>
     
-  </article>
-  
-  
-  
 
+    
+    
+    
   </div>
 
 
@@ -432,7 +288,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册LeanCloude账号"><span class="nav-number">1.</span> <span class="nav-text">注册LeanCloude账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LeanCloude配置"><span class="nav-number">2.</span> <span class="nav-text">LeanCloude配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建应用"><span class="nav-number">2.1.</span> <span class="nav-text">创建应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个类"><span class="nav-number">2.2.</span> <span class="nav-text">创建一个类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安全设置"><span class="nav-number">2.3.</span> <span class="nav-text">安全设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Next中配置valine"><span class="nav-number">3.</span> <span class="nav-text">Next中配置valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置CDN"><span class="nav-number">4.</span> <span class="nav-text">配置CDN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指定文章是否开启评论功能"><span class="nav-number">5.</span> <span class="nav-text">指定文章是否开启评论功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
