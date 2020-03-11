@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/ywAscend/"/>
-  <updated>2019-12-23T03:11:54.145Z</updated>
+  <updated>2020-03-08T07:53:58.207Z</updated>
   <id>https://github.com/ywAscend/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在小程序中使用fontAwesome</title>
+    <link href="https://github.com/ywAscend/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/"/>
+    <id>https://github.com/ywAscend/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/</id>
+    <published>2020-03-08T06:29:39.000Z</published>
+    <updated>2020-03-08T07:53:58.207Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>之前在写小程序时，遇到的字体图标引用的问题，在此记录一下。</p><a id="more"></a><h3 id="原生小程序中使用方法："><a href="#原生小程序中使用方法：" class="headerlink" title="原生小程序中使用方法："></a>原生小程序中使用方法：</h3><p>第一步：官网下载font awesome 下载字体图标压缩包，注意版本为V4.7以下。<br>1.1 fontAwesome官网地址:<a href="http://www.fontawesome.com.cn/" target="_blank" rel="noopener">http://www.fontawesome.com.cn/</a></p><p>第二步：将fontAwesome字体实体转为base64编码文件<br>2.1 解压下载的压缩包找到fontawesome-webfont.ttf文件。<br>压缩包解压–&gt;fonts–&gt;fontawesome-webfont.ttf<br><img src="/images/ft-ttf.png" alt></p><p>2.2 将fontawesome-webfont.ttf文件转为base64编码<br>打开 <a href="https://transfonter.org/" target="_blank" rel="noopener">转码网址</a>,可在线进行转码。<br><img src="/images/ft-upload.png" alt></p><p>下载转码后的压缩包文件<br><img src="/images/base-success.png" alt></p><p>2.3解压转码后的压缩包，打开style.css文件<br><img src="/images/base-stylecss.jpg" alt><br><img src="/images/style-css.jpg" alt></p><p>第三步：获取编码后的最新的font-awesome<br>3.1 打开步骤一中，下载的字体压缩包，找到font-awesome.css文件<br>步骤一下载的压缩包–&gt; css –&gt; font-awesome.css</p><p>3.2 打开 font-awesome.css，删除文件中中 @font-face 及其内容。<br><img src="/images/delete.jpg" alt></p><p>3.3 将2.3中的style.css文件中的内容复制到3.2中，删除@font-face后的的font-awesome.css内容的最上方。</p><p>3.4 此时的font-awesome.css便是我们要在小程序中引用的fontAwesome的样式文件。</p><p>第四步：在原生小程序中引用font-awesome.css<br>为方便起见，这里全局引入。在小程序的app.wxss中直接引入： </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//(xx为你的文件路径)</span><br><span class="line">@import &quot;/xx/font-awesome.wxss&quot;</span><br></pre></td></tr></table></figure><p>使用示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;text class=&quot;fa fa-star-o&quot;&gt;&lt;/text&gt;</span><br></pre></td></tr></table></figure><h3 id="mpvue中使用fontAwesome"><a href="#mpvue中使用fontAwesome" class="headerlink" title="mpvue中使用fontAwesome"></a>mpvue中使用fontAwesome</h3><p>mpvue支持模块化下载，直接安装：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install font-awesome</span><br></pre></td></tr></table></figure><p>然后在主应用的main.js中全局引入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &apos;font-awesome/css/font-awesome.min.css&apos;;</span><br></pre></td></tr></table></figure><p>应用：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span class=&quot;fa fa-eye&quot;&gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure><p>这样就可以在组件中愉快的使用想要的字体图标了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; class=&quot;aplayer-secondary-script-marker&quot;&gt;&lt;/script&gt;&lt;script class=&quot;meting-secondary-script-marker&quot; src=&quot;\assets\js\Meting.min.js&quot;&gt;&lt;/script&gt;&lt;p&gt;之前在写小程序时，遇到的字体图标引用的问题，在此记录一下。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="小程序" scheme="https://github.com/ywAscend/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="小程序" scheme="https://github.com/ywAscend/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>vue+ts中给Vue拓展属性</title>
