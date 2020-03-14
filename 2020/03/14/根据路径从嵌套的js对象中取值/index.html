@@ -50,15 +50,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="歌单">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;musicList&#x2F;index.html">
+  <meta name="description" content="根据一个路径从嵌套的js对象中取出值，如果路径不存在则返回null，路径类型为字符串数组">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="根据路径从嵌套的js对象中取值">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;2020&#x2F;03&#x2F;14&#x2F;%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC&#x2F;index.html">
 <meta property="og:site_name" content="芸伟">
+<meta property="og:description" content="根据一个路径从嵌套的js对象中取出值，如果路径不存在则返回null，路径类型为字符串数组">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-02T04:20:25.689Z">
+<meta property="og:updated_time" content="2020-03-14T16:08:58.911Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/ywAscend/musicList/">
+<link rel="canonical" href="https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/">
 
 
 <script id="page-configurations">
@@ -66,14 +69,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
-    isPage: true,
+    isPost: true,
+    isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>歌单 | 芸伟
-  </title>
+  <title>根据路径从嵌套的js对象中取值 | 芸伟</title>
   
 
 
@@ -108,9 +110,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -220,44 +219,183 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">歌单
-</h1>
-
-<div class="post-meta">
+      
   
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/">
 
-</div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header2.jpg">
+      <meta itemprop="name" content="ywAscend">
+      <meta itemprop="description" content="记录点滴">
+    </span>
 
-</header>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="芸伟">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          根据路径从嵌套的js对象中取值
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-14 23:13:10" itemprop="dateCreated datePublished" datetime="2020-03-14T23:13:10+08:00">2020-03-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-15 00:08:58" itemprop="dateModified" datetime="2020-03-15T00:08:58+08:00">2020-03-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>716</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p>根据一个路径从嵌套的js对象中取出值，如果路径不存在则返回null，路径类型为字符串数组</p><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">eg:</span><br><span class="line">  path = [&apos;a&apos;,&apos;b&apos;] //路径</span><br><span class="line">  obj = &#123; a: &#123; b:2 &#125; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>思考: 用字符串数组中的value值,作为的key,并取对象的key的值，如果有值则说明路径值存在。此时需继续取数组中的value值，作为key去匹配上一个value匹配到的对象值，即要递归调用。既然是递归，那么问题来了，递归必须要有一个终止条件，否则会造成栈溢出。这时当取到字符串最后一个值时，如果匹配到值，则为对应的值，如果没有匹配到值则返回null,此时所取的字符串数组为最后一个值时就是终止递归的条件。</p>
+<p>coding :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">let path = [&apos;a&apos;,&apos;b&apos;]</span><br><span class="line">let obj = &#123; a: &#123; b:2 &#125;&#125;</span><br><span class="line"></span><br><span class="line">function getDeep ( arr,obj ) &#123;</span><br><span class="line">  let strArr = arr.slice(1) </span><br><span class="line">  let subObj = obj[path[0]]</span><br><span class="line">  if ( arr.length&gt;1 &amp;&amp; obj[arr[0]] ) &#123;</span><br><span class="line">    getDeep ( strArr,subObj )</span><br><span class="line">  &#125; else if (arr.length === 1) &#123;</span><br><span class="line">    console.log(&apos;匹配到的路径值&apos;, subObj == undefined ? &apos;null&apos; : subObj)</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getDeep ( path, obj ) // 匹配到的路径值:2</span><br></pre></td></tr></table></figure>
+
+
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
       
-      
-      <div class="post-body">
-          <div id="aplayer-uKHJHjIE" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="431949996" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="ywAscend 微信支付">
+        <p>微信支付</p>
       </div>
       
-      
-      
-    </div>
-    
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="ywAscend 支付宝">
+        <p>支付宝</p>
+      </div>
 
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>ywAscend
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/" title="根据路径从嵌套的js对象中取值">https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/" rel="prev" title="如何在小程序中使用fontAwesome">
+      <i class="fa fa-chevron-left"></i> 如何在小程序中使用fontAwesome
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
     
-    
-    
+  </article>
+  
+  
+  
+
   </div>
 
 

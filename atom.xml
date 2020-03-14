@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/ywAscend/"/>
-  <updated>2020-03-08T07:53:58.207Z</updated>
+  <updated>2020-03-14T16:08:58.911Z</updated>
   <id>https://github.com/ywAscend/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>根据路径从嵌套的js对象中取值</title>
+    <link href="https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/"/>
+    <id>https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/</id>
+    <published>2020-03-14T15:13:10.000Z</published>
+    <updated>2020-03-14T16:08:58.911Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>根据一个路径从嵌套的js对象中取出值，如果路径不存在则返回null，路径类型为字符串数组</p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">eg:</span><br><span class="line">  path = [&apos;a&apos;,&apos;b&apos;] //路径</span><br><span class="line">  obj = &#123; a: &#123; b:2 &#125; &#125;</span><br></pre></td></tr></table></figure><p>思考: 用字符串数组中的value值,作为的key,并取对象的key的值，如果有值则说明路径值存在。此时需继续取数组中的value值，作为key去匹配上一个value匹配到的对象值，即要递归调用。既然是递归，那么问题来了，递归必须要有一个终止条件，否则会造成栈溢出。这时当取到字符串最后一个值时，如果匹配到值，则为对应的值，如果没有匹配到值则返回null,此时所取的字符串数组为最后一个值时就是终止递归的条件。</p><p>coding :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">let path = [&apos;a&apos;,&apos;b&apos;]</span><br><span class="line">let obj = &#123; a: &#123; b:2 &#125;&#125;</span><br><span class="line"></span><br><span class="line">function getDeep ( arr,obj ) &#123;</span><br><span class="line">  let strArr = arr.slice(1) </span><br><span class="line">  let subObj = obj[path[0]]</span><br><span class="line">  if ( arr.length&gt;1 &amp;&amp; obj[arr[0]] ) &#123;</span><br><span class="line">    getDeep ( strArr,subObj )</span><br><span class="line">  &#125; else if (arr.length === 1) &#123;</span><br><span class="line">    console.log(&apos;匹配到的路径值&apos;, subObj == undefined ? &apos;null&apos; : subObj)</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getDeep ( path, obj ) // 匹配到的路径值:2</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; class=&quot;aplayer-secondary-script-marker&quot;&gt;&lt;/script&gt;&lt;script class=&quot;meting-secondary-script-marker&quot; src=&quot;\assets\js\Meting.min.js&quot;&gt;&lt;/script&gt;&lt;p&gt;根据一个路径从嵌套的js对象中取出值，如果路径不存在则返回null，路径类型为字符串数组&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://github.com/ywAscend/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://github.com/ywAscend/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在小程序中使用fontAwesome</title>
