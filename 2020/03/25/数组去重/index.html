@@ -50,18 +50,18 @@
   };
 </script>
 
-  <meta name="description" content="这里共展示两类三种方式。">
-<meta name="keywords" content="git">
+  <meta name="description" content="set去重利用ES6新增数据类型，其特点是接收一个数组或类数组对象，作为参数来初始化数据，且数据不能重复">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git从远程仓库获取最新代码合并到本地分支">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;2019&#x2F;11&#x2F;27&#x2F;usegit&#x2F;index.html">
+<meta property="og:title" content="数组去重">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;2020&#x2F;03&#x2F;25&#x2F;%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D&#x2F;index.html">
 <meta property="og:site_name" content="芸伟">
-<meta property="og:description" content="这里共展示两类三种方式。">
+<meta property="og:description" content="set去重利用ES6新增数据类型，其特点是接收一个数组或类数组对象，作为参数来初始化数据，且数据不能重复">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-27T09:24:46.207Z">
+<meta property="og:updated_time" content="2020-03-25T02:26:10.376Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/ywAscend/2019/11/27/usegit/">
+<link rel="canonical" href="https://github.com/ywAscend/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/">
 
 
 <script id="page-configurations">
@@ -75,7 +75,7 @@
   };
 </script>
 
-  <title>git从远程仓库获取最新代码合并到本地分支 | 芸伟</title>
+  <title>数组去重 | 芸伟</title>
   
 
 
@@ -228,7 +228,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2019/11/27/usegit/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -241,7 +241,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          git从远程仓库获取最新代码合并到本地分支
+          数组去重
         </h1>
 
         <div class="post-meta">
@@ -252,7 +252,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-27 16:23:56 / 修改时间：17:24:46" itemprop="dateCreated datePublished" datetime="2019-11-27T16:23:56+08:00">2019-11-27</time>
+              <time title="创建时间：2020-03-25 09:40:00 / 修改时间：10:26:10" itemprop="dateCreated datePublished" datetime="2020-03-25T09:40:00+08:00">2020-03-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -260,8 +260,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
-                    <span itemprop="name">版本控制工具</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
             </span>
@@ -285,8 +285,8 @@
     
     
 
-    <a title="valine" href="/2019/11/27/usegit/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/11/27/usegit/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -296,14 +296,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -315,34 +315,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>这里共展示两类三种方式。</p><a id="more"></a>
-<h3 id="1-git-pull：获取最新代码到本地，并自动合并到当前分支"><a href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支" class="headerlink" title="1.git pull：获取最新代码到本地，并自动合并到当前分支"></a>1.git pull：获取最新代码到本地，并自动合并到当前分支</h3><p>命令展示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line">$ git remote -v </span><br><span class="line">//直接拉取并合并最新代码</span><br><span class="line">$ git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]</span><br><span class="line">$ git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]</span><br></pre></td></tr></table></figure>
-<p style="color:red">分析：不推荐这种方式，因为是直接合并，无法提前处理冲突。</p>
+        <h3 id="set去重"><a href="#set去重" class="headerlink" title="set去重"></a>set去重</h3><p>利用ES6新增数据类型，其特点是接收一个数组或类数组对象，作为参数来初始化数据，且数据不能重复</p><a id="more"></a>
+<p>1.与数组的结构赋值搭配去重</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function newArr ( arr ) &#123;</span><br><span class="line">  return [...new Set(arr)]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.与Array.form 搭配去重</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function newArr (arr) &#123;</span><br><span class="line">  let newAarray = new Set(arr)</span><br><span class="line">  return Array.form(newArray)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="indexOf-去重"><a href="#indexOf-去重" class="headerlink" title="indexOf()去重"></a>indexOf()去重</h3><p>最常见的去重方式：先定义一个空数组，然后调用indexOf方法对原来的数组进行遍历，若 indexOf[arr[i]]返回 -1 则把 arr[i] 放入空数组中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function newArr ( arr ) &#123;</span><br><span class="line">  let newArray = []</span><br><span class="line">  for(let i=0;i&lt;arr.length;i++)&#123;</span><br><span class="line">    if(newArray.indexOf(arr[i]) === -1)&#123;</span><br><span class="line">      newArray.push(arr[i])</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return newArray</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-git-fetch-merge-获取最新代码到本地，然后手动合并分支"><a href="#2-git-fetch-merge-获取最新代码到本地，然后手动合并分支" class="headerlink" title="2.git fetch + merge: 获取最新代码到本地，然后手动合并分支"></a>2.git fetch + merge: 获取最新代码到本地，然后手动合并分支</h3><h4 id="2-1-额外建立本地分支"><a href="#2-1-额外建立本地分支" class="headerlink" title="2.1.额外建立本地分支"></a>2.1.额外建立本地分支</h4><p>代码展示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//查看当前远程的版本</span><br><span class="line">$ git remote -v </span><br><span class="line">//获取最新代码到本地临时分支(本地当前分支为[branch]，获取的远端的分支为[origin/branch])</span><br><span class="line">$ git fetch origin master:master1  [示例1：在本地建立master1分支，并下载远端的origin/master分支到master1分支中]</span><br><span class="line">$ git fetch origin dev:dev1[示例1：在本地建立dev1分支，并下载远端的origin/dev分支到dev1分支中]</span><br><span class="line">//查看版本差异</span><br><span class="line">$ git diff master1 [示例1：查看本地master1分支与当前分支的版本差异]</span><br><span class="line">$ git diff dev1    [示例2：查看本地dev1分支与当前分支的版本差异]</span><br><span class="line">//合并最新分支到本地分支</span><br><span class="line">$ git merge master1    [示例1：合并本地分支master1到当前分支]</span><br><span class="line">$ git merge dev1   [示例2：合并本地分支dev1到当前分支]</span><br><span class="line">//删除本地临时分支</span><br><span class="line">$ git branch -D master1    [示例1：删除本地分支master1]</span><br><span class="line">$ git branch -D dev1 [示例1：删除本地分支dev1]</span><br></pre></td></tr></table></figure>
-<p style="color:red">备注：不推荐这种方式，还需要额外对临时分支进行处理。</p>
-
-<h3 id="2-2-不额外建立本地分支"><a href="#2-2-不额外建立本地分支" class="headerlink" title="2.2 不额外建立本地分支"></a>2.2 不额外建立本地分支</h3><p>代码展示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line">$ git remote -v</span><br><span class="line">//获取最新代码到本地(本地当前分支为[branch]，获取的远端的分支为[origin/branch])</span><br><span class="line">$ git fetch origin master  [示例1：获取远端的origin/master分支]</span><br><span class="line">$ git fetch origin dev [示例2：获取远端的origin/dev分支]</span><br><span class="line">//查看版本差异</span><br><span class="line">$ git log -p master..origin/master [示例1：查看本地master与远端origin/master的版本差异]</span><br><span class="line">$ git log -p dev..origin/dev   [示例2：查看本地dev与远端origin/dev的版本差异]</span><br><span class="line">//合并最新代码到本地分支</span><br><span class="line">$ git merge origin/master  [示例1：合并远端分支origin/master到当前分支]</span><br><span class="line">$ git merge origin/dev [示例2：合并远端分支origin/dev到当前分支]</span><br></pre></td></tr></table></figure>
-<p style="color:red">备注：推荐这种方式。</p>
-
-<h3 id="原文链接：https-blog-csdn-net-hanchao5272-article-details-79162130"><a href="#原文链接：https-blog-csdn-net-hanchao5272-article-details-79162130" class="headerlink" title="原文链接：https://blog.csdn.net/hanchao5272/article/details/79162130"></a>原文链接：<a href="https://blog.csdn.net/hanchao5272/article/details/79162130" target="_blank" rel="noopener">https://blog.csdn.net/hanchao5272/article/details/79162130</a></h3><h3 id="git-本地创建远程分支"><a href="#git-本地创建远程分支" class="headerlink" title="git 本地创建远程分支"></a>git 本地创建远程分支</h3><p>$ git branch<br>    * master<br>      release</p>
-<p>新建远程分支</p>
-<p>新建一个本地分支：</p>
-<pre><code>$ git checkout -b dbg_lichen_star</code></pre><p>查看一下现在的分支状态:</p>
-<pre><code>$ git branch
-* dbg_lichen_star
-  master
-  release</code></pre><p>星号(*)表示当前所在分支。现在的状态是成功创建的新的分支并且已经切换到新分支上。</p>
-<p>把新建的本地分支push到远程服务器，远程分支与本地分支同名（当然可以随意起名）：</p>
-<pre><code>$ git push origin dbg_lichen_star:dbg_lichen_star</code></pre><p>使用git branch -a查看所有分支，会看到remotes/origin/dbg_lichen_star这个远程分支，说明新建远程分支成功。<br>删除远程分支</p>
-<p>我比较喜欢的简单方式，推送一个空分支到远程分支，其实就相当于删除远程分支：</p>
-<pre><code>$ git push origin :dbg_lichen_star</code></pre><p>也可以使用：</p>
-<pre><code>$ git push origin --delete dbg_lichen_star</code></pre><p>这两种方式都可以删除指定的远程分支</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><span style="color:red"><a href="https://blog.csdn.net/hanchao5272/article/details/79162130" target="_blank" rel="noopener">https://blog.csdn.net/hanchao5272/article/details/79162130</a></span></p>
-
+<h3 id="对象属性去重"><a href="#对象属性去重" class="headerlink" title="对象属性去重"></a>对象属性去重</h3><p>创建一个空对象obj和一个空数组newArray，遍历数组arr，将数组arr[i]中的值设为对象obj的属性，并给该属性初始值设为1，没出现一次，对应的属性值加1，这样属性值对应的就是该元素出现的次数了。若对象中，无 arr[i] 属性，则push到创建的空数组newArray中，同时obj添加arr[i] 属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function newArr (arr)&#123;</span><br><span class="line">  let obj=&#123;&#125;,newArray=[]</span><br><span class="line">  for (let i=0;i&lt;arr.length;i++)&#123;</span><br><span class="line">    if(!obj[arr[i]])&#123;</span><br><span class="line">      newArray.push(arr[i])</span><br><span class="line">      obj[arr[i]] = 1</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      obj[arr[i]]++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return newArray</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="排序后-相邻去重"><a href="#排序后-相邻去重" class="headerlink" title="排序后,相邻去重"></a>排序后,相邻去重</h3><p>先调用 sort 方法，然后遍历数组，若当前元素与下一个元素相同，则说明重复，不相同则添加到新数组中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function newArr (arr)&#123;</span><br><span class="line">  let newArray =[]</span><br><span class="line">  arr = arr.sort()</span><br><span class="line">  newArray = [arr[0]]</span><br><span class="line">  for(let i =1;i&lt;arr.length;i++)&#123;</span><br><span class="line">    if(arr[i] !== arr[i-1])&#123;</span><br><span class="line">      newArray.push(arr[i])</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return newArray</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="双重循环去重-（方法一）"><a href="#双重循环去重-（方法一）" class="headerlink" title="双重循环去重 （方法一）"></a>双重循环去重 （方法一）</h3><p>获取没重复的最右边的值放入新数组，检测到有重复值时终止当前循环同时，进入顶层的循环进行下一轮判断</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function newArr (arr) &#123;</span><br><span class="line">  let newArray =[]</span><br><span class="line">  for(let i =0; i&lt; arr.length;i++)&#123;</span><br><span class="line">    for(let j = i+1; j&lt; arr.length;j++)&#123;</span><br><span class="line">      if(arr[i] === arr[j])&#123;</span><br><span class="line">        i++;</span><br><span class="line">        j = i;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    newArray.push(arr[i])</span><br><span class="line">  &#125;</span><br><span class="line">  console.log(index)</span><br><span class="line">  return newArray</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="双重循环去重-（方法二）"><a href="#双重循环去重-（方法二）" class="headerlink" title="双重循环去重 （方法二）"></a>双重循环去重 （方法二）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function newArr2(arr) &#123;</span><br><span class="line">  for (let i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">    for (let j = i + 1; j &lt; arr.length; j++) &#123;</span><br><span class="line">      if (arr[i] == arr[j]) &#123;</span><br><span class="line">        arr.splice(j, 1)</span><br><span class="line">        j--</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return arr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -377,7 +364,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://github.com/ywAscend/2019/11/27/usegit/" title="git从远程仓库获取最新代码合并到本地分支">https://github.com/ywAscend/2019/11/27/usegit/</a>
+    <a href="https://github.com/ywAscend/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" title="数组去重">https://github.com/ywAscend/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -388,7 +375,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+              <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
           </div>
 
         
@@ -396,10 +383,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/11/27/hexo/" rel="next" title="hexo主题配置Next">
-      hexo主题配置Next <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/25/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" rel="prev" title="数组排序">
+      <i class="fa fa-chevron-left"></i> 数组排序
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/25/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E6%AC%A1%E6%95%B0/" rel="next" title="判断一个字符串中出现次数最多的字符并统计次数">
+      判断一个字符串中出现次数最多的字符并统计次数 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -439,7 +429,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支"><span class="nav-number">1.</span> <span class="nav-text">1.git pull：获取最新代码到本地，并自动合并到当前分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-git-fetch-merge-获取最新代码到本地，然后手动合并分支"><span class="nav-number">2.</span> <span class="nav-text">2.git fetch + merge: 获取最新代码到本地，然后手动合并分支</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-额外建立本地分支"><span class="nav-number">2.1.</span> <span class="nav-text">2.1.额外建立本地分支</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-不额外建立本地分支"><span class="nav-number">3.</span> <span class="nav-text">2.2 不额外建立本地分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原文链接：https-blog-csdn-net-hanchao5272-article-details-79162130"><span class="nav-number">4.</span> <span class="nav-text">原文链接：https://blog.csdn.net/hanchao5272/article/details/79162130</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-本地创建远程分支"><span class="nav-number">5.</span> <span class="nav-text">git 本地创建远程分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#set去重"><span class="nav-number">1.</span> <span class="nav-text">set去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#indexOf-去重"><span class="nav-number">2.</span> <span class="nav-text">indexOf()去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象属性去重"><span class="nav-number">3.</span> <span class="nav-text">对象属性去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排序后-相邻去重"><span class="nav-number">4.</span> <span class="nav-text">排序后,相邻去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双重循环去重-（方法一）"><span class="nav-number">5.</span> <span class="nav-text">双重循环去重 （方法一）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双重循环去重-（方法二）"><span class="nav-number">6.</span> <span class="nav-text">双重循环去重 （方法二）</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
