@@ -226,7 +226,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/13/css%E6%8A%BD%E7%A6%BB%E4%B8%BA%E5%8D%95%E7%8B%AC%E6%96%87%E4%BB%B6/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/27/tree-shaking/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -240,7 +240,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/05/13/css%E6%8A%BD%E7%A6%BB%E4%B8%BA%E5%8D%95%E7%8B%AC%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">webpack-css抽离为单独文件</a>
+            <a href="/2020/05/27/tree-shaking/" class="post-title-link" itemprop="url">tree-shaking</a>
         </h1>
 
         <div class="post-meta">
@@ -249,10 +249,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-13 21:20:45 / 修改时间：21:38:37" itemprop="dateCreated datePublished" datetime="2020-05-13T21:20:45+08:00">2020-05-13</time>
+              <time title="创建时间：2020-05-27 13:33:31" itemprop="dateCreated datePublished" datetime="2020-05-27T13:33:31+08:00">2020-05-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:56:29" itemprop="dateModified" datetime="2020-06-06T22:56:29+08:00">2020-06-06</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -277,8 +283,8 @@
     
     
 
-    <a title="valine" href="/2020/05/13/css%E6%8A%BD%E7%A6%BB%E4%B8%BA%E5%8D%95%E7%8B%AC%E6%96%87%E4%BB%B6/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/13/css%E6%8A%BD%E7%A6%BB%E4%B8%BA%E5%8D%95%E7%8B%AC%E6%96%87%E4%BB%B6/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/27/tree-shaking/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/27/tree-shaking/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -288,331 +294,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>基础配置中的css是通过style-loader 转为js的样式文件，最后插入在head中引入样式。这样的好处是，页面加载时不会重新请求css文件，但也有缺点页面一次性加载内容较多，影响加载速度。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/13/css%E6%8A%BD%E7%A6%BB%E4%B8%BA%E5%8D%95%E7%8B%AC%E6%96%87%E4%BB%B6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/13/webpack%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header2.jpg">
-      <meta itemprop="name" content="ywAscend">
-      <meta itemprop="description" content="记录点滴">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="芸伟">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/13/webpack%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">webpack基本配置</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-13 21:15:18 / 修改时间：21:16:37" itemprop="dateCreated datePublished" datetime="2020-05-13T21:15:18+08:00">2020-05-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/webpack/" itemprop="url" rel="index">
-                    <span itemprop="name">webpack</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">评论：</span>
-    
-    
-
-    <a title="valine" href="/2020/05/13/webpack%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/13/webpack%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>5.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>webpack基本配置</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/13/webpack%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/13/webpack/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header2.jpg">
-      <meta itemprop="name" content="ywAscend">
-      <meta itemprop="description" content="记录点滴">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="芸伟">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/13/webpack/" class="post-title-link" itemprop="url">webpack介绍</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-13 21:12:59 / 修改时间：21:14:19" itemprop="dateCreated datePublished" datetime="2020-05-13T21:12:59+08:00">2020-05-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/webpack/" itemprop="url" rel="index">
-                    <span itemprop="name">webpack</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">评论：</span>
-    
-    
-
-    <a title="valine" href="/2020/05/13/webpack/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/13/webpack/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>webpack四个核心概念</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/13/webpack/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/25/CSS%E5%AE%9E%E7%8E%B0%E8%87%AA%E9%80%82%E5%BA%94%E6%AD%A3%E6%96%B9%E5%BD%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header2.jpg">
-      <meta itemprop="name" content="ywAscend">
-      <meta itemprop="description" content="记录点滴">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="芸伟">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/25/CSS%E5%AE%9E%E7%8E%B0%E8%87%AA%E9%80%82%E5%BA%94%E6%AD%A3%E6%96%B9%E5%BD%A2/" class="post-title-link" itemprop="url">CSS实现自适应正方形</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-25 14:33:27 / 修改时间：15:03:40" itemprop="dateCreated datePublished" datetime="2020-03-25T14:33:27+08:00">2020-03-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">评论：</span>
-    
-    
-
-    <a title="valine" href="/2020/03/25/CSS%E5%AE%9E%E7%8E%B0%E8%87%AA%E9%80%82%E5%BA%94%E6%AD%A3%E6%96%B9%E5%BD%A2/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/25/CSS%E5%AE%9E%E7%8E%B0%E8%87%AA%E9%80%82%E5%BA%94%E6%AD%A3%E6%96%B9%E5%BD%A2/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>786</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -631,10 +313,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>vw单位实现<br>什么是vw、vh、vmin、vmax?<br>先了解一下视口的概念。 在PC端，视口是值浏览器的可视区域；在移动端，则涉及3个视口：Layout Viewport(布局视口)、Visual Viewport(视觉视口)、Idea Viewport(理想视口)。<br>常说的视口，在PC端指的是 浏览器的可视区域；移动端指的是 layout viewport，浏览器内部的可视区域的大小。即 window.innerWidth/window.innerHeight大小，不包含任务标题栏和底部工具栏的浏览器区域大小。</p>
+          <p>tree shaking 所谓的“摇树”，是指删除无用的代码，这样在构建大型应用时，可以大大减少打包的体积</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/25/CSS%E5%AE%9E%E7%8E%B0%E8%87%AA%E9%80%82%E5%BA%94%E6%AD%A3%E6%96%B9%E5%BD%A2/#more" rel="contents">
+              <a class="btn" href="/2020/05/27/tree-shaking/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -658,7 +340,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/25/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E6%AC%A1%E6%95%B0/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/22/%E7%BC%93%E5%AD%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -672,7 +354,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/25/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E6%AC%A1%E6%95%B0/" class="post-title-link" itemprop="url">判断一个字符串中出现次数最多的字符并统计次数</a>
+            <a href="/2020/05/22/%E7%BC%93%E5%AD%98/" class="post-title-link" itemprop="url">缓存</a>
         </h1>
 
         <div class="post-meta">
@@ -681,18 +363,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-25 11:54:36 / 修改时间：12:31:01" itemprop="dateCreated datePublished" datetime="2020-03-25T11:54:36+08:00">2020-03-25</time>
+              <time title="创建时间：2020-05-22 15:41:17" itemprop="dateCreated datePublished" datetime="2020-05-22T15:41:17+08:00">2020-05-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:55:54" itemprop="dateModified" datetime="2020-06-06T22:55:54+08:00">2020-06-06</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
             </span>
@@ -709,8 +397,8 @@
     
     
 
-    <a title="valine" href="/2020/03/25/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E6%AC%A1%E6%95%B0/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/25/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E6%AC%A1%E6%95%B0/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/22/%E7%BC%93%E5%AD%98/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/22/%E7%BC%93%E5%AD%98/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -720,14 +408,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>902</span>
+              <span>4.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -739,10 +427,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>eg； str = ‘abcdeffffgenbggoo’</p>
+          <p>缓存优化：<br>webpack缓存有 babel缓存和文件资源缓存两种。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/25/%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%B9%B6%E7%BB%9F%E8%AE%A1%E6%AC%A1%E6%95%B0/#more" rel="contents">
+              <a class="btn" href="/2020/05/22/%E7%BC%93%E5%AD%98/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -766,7 +454,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/22/oneOf/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -780,7 +468,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" class="post-title-link" itemprop="url">数组去重</a>
+            <a href="/2020/05/22/oneOf/" class="post-title-link" itemprop="url">oneOf</a>
         </h1>
 
         <div class="post-meta">
@@ -789,18 +477,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-25 09:40:00 / 修改时间：10:26:10" itemprop="dateCreated datePublished" datetime="2020-03-25T09:40:00+08:00">2020-03-25</time>
+              <time title="创建时间：2020-05-22 14:29:17" itemprop="dateCreated datePublished" datetime="2020-05-22T14:29:17+08:00">2020-05-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:55:22" itemprop="dateModified" datetime="2020-06-06T22:55:22+08:00">2020-06-06</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
             </span>
@@ -817,8 +511,122 @@
     
     
 
-    <a title="valine" href="/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/22/oneOf/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/22/oneOf/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>webpack的 module是对一些文件的loader的配置，如：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/22/oneOf/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/21/source-map/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header2.jpg">
+      <meta itemprop="name" content="ywAscend">
+      <meta itemprop="description" content="记录点滴">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="芸伟">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/21/source-map/" class="post-title-link" itemprop="url">source-map</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 09:39:24" itemprop="dateCreated datePublished" datetime="2020-05-21T09:39:24+08:00">2020-05-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:54:11" itemprop="dateModified" datetime="2020-06-06T22:54:11+08:00">2020-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2020/05/21/source-map/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/21/source-map/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -847,10 +655,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="set去重"><a href="#set去重" class="headerlink" title="set去重"></a>set去重</h3><p>利用ES6新增数据类型，其特点是接收一个数组或类数组对象，作为参数来初始化数据，且数据不能重复</p>
+          <p>source-map ： 一种提供 源代码 到 构建后代码 映射的技术，如果构建后代码出错了，通过映射可以追踪源代码错误，便于问题定位，开发调试</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/25/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/#more" rel="contents">
+              <a class="btn" href="/2020/05/21/source-map/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -874,7 +682,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/25/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/20/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BC%98%E5%8C%96-HMR/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -888,115 +696,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/25/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" class="post-title-link" itemprop="url">数组排序</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-25 09:00:09 / 修改时间：09:38:01" itemprop="dateCreated datePublished" datetime="2020-03-25T09:00:09+08:00">2020-03-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">评论：</span>
-    
-    
-
-    <a title="valine" href="/2020/03/25/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/25/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>745</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="sort排序"><a href="#sort排序" class="headerlink" title="sort排序"></a>sort排序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">arr.sort((a,b) =&gt; &#123;</span><br><span class="line">  //return a-b  //升序</span><br><span class="line">  return b-a    //降序</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/25/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header2.jpg">
-      <meta itemprop="name" content="ywAscend">
-      <meta itemprop="description" content="记录点滴">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="芸伟">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/" class="post-title-link" itemprop="url">根据路径从嵌套的js对象中取值</a>
+            <a href="/2020/05/20/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BC%98%E5%8C%96-HMR/" class="post-title-link" itemprop="url">开发环境优化-HMR</a>
         </h1>
 
         <div class="post-meta">
@@ -1006,14 +706,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-03-14 23:13:10" itemprop="dateCreated datePublished" datetime="2020-03-14T23:13:10+08:00">2020-03-14</time>
+              <time title="创建时间：2020-05-20 15:38:46" itemprop="dateCreated datePublished" datetime="2020-05-20T15:38:46+08:00">2020-05-20</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-15 00:08:58" itemprop="dateModified" datetime="2020-03-15T00:08:58+08:00">2020-03-15</time>
+                <time title="修改时间：2020-06-06 22:50:22" itemprop="dateModified" datetime="2020-06-06T22:50:22+08:00">2020-06-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1021,8 +721,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
             </span>
@@ -1039,8 +739,8 @@
     
     
 
-    <a title="valine" href="/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/20/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BC%98%E5%8C%96-HMR/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/20/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BC%98%E5%8C%96-HMR/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1050,14 +750,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>716</span>
+              <span>7.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>7 分钟</span>
             </span>
 
         </div>
@@ -1069,10 +769,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>根据一个路径从嵌套的js对象中取出值，如果路径不存在则返回null，路径类型为字符串数组</p>
+          <p>前面配置中，无论是js还是css只要有一个文件改动，都会造成所有模块全部重新打包。项目中引入的模块较少时，影响不大。而当项目中引入上千个模块时，每次改动都会造成这些模块的重新打包，打包构建效率大大降低，影响开发效率。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/14/%E6%A0%B9%E6%8D%AE%E8%B7%AF%E5%BE%84%E4%BB%8E%E5%B5%8C%E5%A5%97%E7%9A%84js%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8F%96%E5%80%BC/#more" rel="contents">
+              <a class="btn" href="/2020/05/20/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%BC%98%E5%8C%96-HMR/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1096,7 +796,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/20/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -1110,7 +810,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/" class="post-title-link" itemprop="url">如何在小程序中使用fontAwesome</a>
+            <a href="/2020/05/20/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="post-title-link" itemprop="url">webpack性能优化</a>
         </h1>
 
         <div class="post-meta">
@@ -1119,18 +819,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-08 14:29:39 / 修改时间：15:53:58" itemprop="dateCreated datePublished" datetime="2020-03-08T14:29:39+08:00">2020-03-08</time>
+              <time title="创建时间：2020-05-20 15:14:22" itemprop="dateCreated datePublished" datetime="2020-05-20T15:14:22+08:00">2020-05-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:49:38" itemprop="dateModified" datetime="2020-06-06T22:49:38+08:00">2020-06-06</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" itemprop="url" rel="index">
-                    <span itemprop="name">小程序</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
             </span>
@@ -1147,8 +853,8 @@
     
     
 
-    <a title="valine" href="/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/20/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/20/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1158,7 +864,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>993</span>
+              <span>63</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1177,10 +883,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>之前在写小程序时，遇到的字体图标引用的问题，在此记录一下。</p>
+          <ul>
+<li>开发环境性能优化</li>
+<li>生产环境性能优化</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/08/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8fontAwesome/#more" rel="contents">
+              <a class="btn" href="/2020/05/20/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1204,7 +913,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2019/12/23/vue-ts%E4%B8%AD%E7%BB%99Vue%E6%8B%93%E5%B1%95%E5%B1%9E%E6%80%A7/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/20/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header2.jpg">
@@ -1218,7 +927,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/12/23/vue-ts%E4%B8%AD%E7%BB%99Vue%E6%8B%93%E5%B1%95%E5%B1%9E%E6%80%A7/" class="post-title-link" itemprop="url">vue+ts中给Vue拓展属性</a>
+            <a href="/2020/05/20/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">生产环境配置</a>
         </h1>
 
         <div class="post-meta">
@@ -1227,18 +936,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-12-23 10:57:04 / 修改时间：11:11:54" itemprop="dateCreated datePublished" datetime="2019-12-23T10:57:04+08:00">2019-12-23</time>
+              <time title="创建时间：2020-05-20 14:41:01" itemprop="dateCreated datePublished" datetime="2020-05-20T14:41:01+08:00">2020-05-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:48:36" itemprop="dateModified" datetime="2020-06-06T22:48:36+08:00">2020-06-06</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
             </span>
@@ -1255,8 +970,8 @@
     
     
 
-    <a title="valine" href="/2019/12/23/vue-ts%E4%B8%AD%E7%BB%99Vue%E6%8B%93%E5%B1%95%E5%B1%9E%E6%80%A7/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/23/vue-ts%E4%B8%AD%E7%BB%99Vue%E6%8B%93%E5%B1%95%E5%B1%9E%E6%80%A7/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/20/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/20/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1266,7 +981,349 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>343</span>
+              <span>5.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>生产环境需要做的工作：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/20/%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/18/js%E5%85%BC%E5%AE%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header2.jpg">
+      <meta itemprop="name" content="ywAscend">
+      <meta itemprop="description" content="记录点滴">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="芸伟">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/18/js%E5%85%BC%E5%AE%B9/" class="post-title-link" itemprop="url">js兼容</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-18 10:26:17" itemprop="dateCreated datePublished" datetime="2020-05-18T10:26:17+08:00">2020-05-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:46:52" itemprop="dateModified" datetime="2020-06-06T22:46:52+08:00">2020-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2020/05/18/js%E5%85%BC%E5%AE%B9/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/18/js%E5%85%BC%E5%AE%B9/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="js语法检查回顾："><a href="#js语法检查回顾：" class="headerlink" title="js语法检查回顾："></a>js语法检查回顾：</h3><p>安装的插件：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/18/js%E5%85%BC%E5%AE%B9/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/15/js%E8%AF%AD%E6%B3%95%E6%A3%80%E6%9F%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header2.jpg">
+      <meta itemprop="name" content="ywAscend">
+      <meta itemprop="description" content="记录点滴">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="芸伟">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/15/js%E8%AF%AD%E6%B3%95%E6%A3%80%E6%9F%A5/" class="post-title-link" itemprop="url">js语法检查</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-15 10:09:20" itemprop="dateCreated datePublished" datetime="2020-05-15T10:09:20+08:00">2020-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:46:57" itemprop="dateModified" datetime="2020-06-06T22:46:57+08:00">2020-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2020/05/15/js%E8%AF%AD%E6%B3%95%E6%A3%80%E6%9F%A5/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/15/js%E8%AF%AD%E6%B3%95%E6%A3%80%E6%9F%A5/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>9.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>9 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在项目中，团队代码规范，风格保持一致，对于项目维护、开发效率来说很重要。因此项目中需要进行必要的语法检查，保持代码风格统一，提高开发效率。目前使用比较广泛的就是 eslint了。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/15/js%E8%AF%AD%E6%B3%95%E6%A3%80%E6%9F%A5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2020/05/14/git%E6%8F%90%E4%BA%A4%E6%88%96add%E6%97%B6%E6%8F%90%E7%A4%BALF%E5%B0%86%E4%BC%9A%E8%A2%AB%E6%9B%BF%E6%8D%A2%E4%B8%BACRLF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header2.jpg">
+      <meta itemprop="name" content="ywAscend">
+      <meta itemprop="description" content="记录点滴">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="芸伟">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/14/git%E6%8F%90%E4%BA%A4%E6%88%96add%E6%97%B6%E6%8F%90%E7%A4%BALF%E5%B0%86%E4%BC%9A%E8%A2%AB%E6%9B%BF%E6%8D%A2%E4%B8%BACRLF/" class="post-title-link" itemprop="url">git提交或add时提示LF将会被替换为CRLF</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-14 17:14:31" itemprop="dateCreated datePublished" datetime="2020-05-14T17:14:31+08:00">2020-05-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 22:45:29" itemprop="dateModified" datetime="2020-06-06T22:45:29+08:00">2020-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
+                    <span itemprop="name">版本控制工具</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2020/05/14/git%E6%8F%90%E4%BA%A4%E6%88%96add%E6%97%B6%E6%8F%90%E7%A4%BALF%E5%B0%86%E4%BC%9A%E8%A2%AB%E6%9B%BF%E6%8D%A2%E4%B8%BACRLF/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/14/git%E6%8F%90%E4%BA%A4%E6%88%96add%E6%97%B6%E6%8F%90%E7%A4%BALF%E5%B0%86%E4%BC%9A%E8%A2%AB%E6%9B%BF%E6%8D%A2%E4%B8%BACRLF/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1285,10 +1342,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>在vue+ts项目中通过prototype给Vue拓展属性时，发现拓展的属性无法获取到，查<a href="'https://vuejs.bootcss.com/v2/guide/typescript.html#%E5%9F%BA%E4%BA%8E%E7%B1%BB%E7%9A%84-Vue-%E7%BB%84%E4%BB%B6'">文档</a>后发现需要进行类型声明.</p>
+          <p>什么是LF和CRLF ?<br>1.LF和CRLF都是换行符，在各操作系统下，换行符是不一样的，Linux/UNIX下是LF,而Windows下是CRLF，早期的MAC OS是CR,后来的OS X在更换内核后和UNIX一样也是LF.<br>这种不统一确实对跨平台的文件交换带来了麻烦。虽然靠谱的文本编辑器和 IDE 都支持这几种换行符，但文件在保存时总要有一个固定的标准啊，比如跨平台协作的项目源码，到底保存为哪种风格的换行符呢？</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/23/vue-ts%E4%B8%AD%E7%BB%99Vue%E6%8B%93%E5%B1%95%E5%B1%9E%E6%80%A7/#more" rel="contents">
+              <a class="btn" href="/2020/05/14/git%E6%8F%90%E4%BA%A4%E6%88%96add%E6%97%B6%E6%8F%90%E7%A4%BALF%E5%B0%86%E4%BC%9A%E8%A2%AB%E6%9B%BF%E6%8D%A2%E4%B8%BACRLF/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1312,7 +1369,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1358,7 +1415,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1436,7 +1493,7 @@
       <i class="fa fa-area-chart" style="display:none"></i>
       本站总字数：
     </span>
-    <span title="站点总字数">25k</span>
+    <span title="站点总字数">69k</span>
 </div>
 
         
