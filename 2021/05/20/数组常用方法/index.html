@@ -50,16 +50,18 @@
   };
 </script>
 
-  <meta name="description" content="记录点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="芸伟">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;categories&#x2F;webpack&#x2F;page&#x2F;2&#x2F;index.html">
+  <meta name="description" content="数组访问方法：1push  添加元素到数组末尾。改变原数组，返回数组长度">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组常用方法">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ywAscend&#x2F;2021&#x2F;05&#x2F;20&#x2F;%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="芸伟">
-<meta property="og:description" content="记录点滴">
+<meta property="og:description" content="数组访问方法：1push  添加元素到数组末尾。改变原数组，返回数组长度">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2021-05-20T14:32:35.782Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/ywAscend/categories/webpack/page/2/">
+<link rel="canonical" href="https://github.com/ywAscend/2021/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -67,13 +69,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>分类: webpack | 芸伟</title>
+  <title>数组常用方法 | 芸伟</title>
   
 
 
@@ -221,97 +223,204 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">webpack
-          <small>分类</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ywAscend/2021/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header2.jpg">
+      <meta itemprop="name" content="ywAscend">
+      <meta itemprop="description" content="记录点滴">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="芸伟">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数组常用方法
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-20 22:31:54 / 修改时间：22:32:35" itemprop="dateCreated datePublished" datetime="2021-05-20T22:31:54+08:00">2021-05-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">评论：</span>
+    
+    
+
+    <a title="valine" href="/2021/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>942</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
+        <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h5 id="访问方法："><a href="#访问方法：" class="headerlink" title="访问方法："></a>访问方法：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">push  添加元素到数组末尾。改变原数组，返回数组长度</span><br></pre></td></tr></table></figure><a id="more"></a>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pop   删除数组最后一个元素。改变原数组，返回删除的元素。</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-13T21:20:45+08:00"
-              content="2020-05-13">
-          05-13
-        </time>
-      </div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shift 删除数组第一个元素。改变原数组，返回删除的元素。</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/05/13/css%E6%8A%BD%E7%A6%BB%E4%B8%BA%E5%8D%95%E7%8B%AC%E6%96%87%E4%BB%B6/" itemprop="url">
-            <span itemprop="name">webpack-css抽离为单独文件</span>
-          </a>
-      </h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unshift  添加元素到数组头部。改变原数组，返回数组的长度。</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">indexOf  找出某个元素在数组中第一次出现的位置，没有返回-1。</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">splice  </span><br><span class="line">删除数组中的元素。接收三个参数，第一个是删除的起始位置，第二个为要删除的长度，从起始位置算起。第三个为要添加的元素，可用一个或多个值来替换那些被删除的元素改变原数组，返回一个包含删除元素的新数组。</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-13T21:15:18+08:00"
-              content="2020-05-13">
-          05-13
-        </time>
-      </div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slice  	接收两个参数，start,end。 不改变原数组。返回一个新的数组，包含从start到end(不包含该元素)的数组中元素。</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/05/13/webpack%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" itemprop="url">
-            <span itemprop="name">webpack基本配置</span>
-          </a>
-      </h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contact   返回一个由当前数组和其他若干个数组组合的新数组。</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">includes  判断数组中是否包含指定的值，包含返回true,否则返回false。</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">join      连接所有数组中的元素组成一个字符串。</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-13T21:12:59+08:00"
-              content="2020-05-13">
-          05-13
-        </time>
-      </div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">toString  返回一个由所有数组元素组合而成的字符串。</span><br><span class="line">		  遮蔽了原型链上的Object.prototype.toString() 方法。</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/05/13/webpack/" itemprop="url">
-            <span itemprop="name">webpack介绍</span>
-          </a>
-      </h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lastIndexOf  返回数组中最后与指定值相等的元素的索引，找不到返回-1。</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sort	  排序，返回排序后的数组。改变原数组。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reverse	  颠倒数组中元素的排列顺序,返回颠倒后的数组。改变原数组。</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="迭代方法"><a href="#迭代方法" class="headerlink" title="迭代方法"></a>迭代方法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">forEach	为数组中的每个元素执行一次回调函数</span><br><span class="line">entries	返回一个数组迭代器对象，该迭代器会包含所有数组元素的键值对。</span><br><span class="line">every	如果数组中的每个元素都满足测试函数，则返回 true，否则返回 false。</span><br><span class="line">some	如果数组中至少有一个元素满足测试函数，则返回 true，否则返回 false。</span><br><span class="line">filter	将所有在过滤函数中返回 true 的数组元素放进一个新数组中并返回。</span><br><span class="line">find	找到第一个满足测试函数的元素并返回那个元素的值，如果找不到，则返回 undefined。</span><br><span class="line">findIndex	找到第一个满足测试函数的元素并返回那个元素的索引，如果找不到，则返回 -1。</span><br><span class="line">keys	方法返回一个包含数组中每个索引键的Array Iterator对象。</span><br><span class="line">map	返回一个由回调函数的返回值组成的新数组。</span><br></pre></td></tr></table></figure>
+
+
 
     </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="ywAscend 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="ywAscend 支付宝">
+        <p>支付宝</p>
+      </div>
+
   </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>ywAscend
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://github.com/ywAscend/2021/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" title="数组常用方法">https://github.com/ywAscend/2021/05/20/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/05/20/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E6%B5%85%E6%8B%B7%E8%B4%9D/" rel="prev" title="深拷贝浅拷贝">
+      <i class="fa fa-chevron-left"></i> 深拷贝浅拷贝
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
   
   
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/categories/webpack/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/categories/webpack/">1</a><span class="page-number current">2</span>
-  </nav>
-
+  </div>
 
 
           </div>
           
+    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -336,6 +445,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数组"><span class="nav-number">1.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#访问方法："><span class="nav-number">1.0.1.</span> <span class="nav-text">访问方法：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#迭代方法"><span class="nav-number">1.0.2.</span> <span class="nav-text">迭代方法</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
